@@ -9,14 +9,14 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="lost-in-ocr-translation",
+    name="lost-ocr",
     version="1.0.0",
-    author="Your Name",
-    author_email="your-email@example.com",
+    author="Alex Most, Manish Bhattarai",
+    author_email="amost@lanl.gov",
     description="Vision-based approaches to robust document retrieval under OCR degradation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/lost-in-ocr-translation",
+    url="https://github.com/lanl/lost-ocr",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
@@ -60,7 +60,7 @@ setup(
     },
     project_urls={
         "Paper": "https://arxiv.org/abs/2505.05666",
-        "Bug Reports": "https://github.com/yourusername/lost-in-ocr-translation/issues",
-        "Source": "https://github.com/yourusername/lost-in-ocr-translation",
+        "Bug Reports": "https://github.com/yourusername/lost-ocr/issues",
+        "Source": "https://github.com/yourusername/lost-ocr",
     },
 )
